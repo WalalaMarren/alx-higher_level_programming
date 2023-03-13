@@ -1,10 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def no_c(my_string):
-<<<<<<< HEAD
-    print(my_string.translate({ord(i): None for i in 'Cc'}))
-=======
-    for i in range(len(my_string)):
-        if my_string[i] in "cC":
-            del my_string[i]
-    return my_string
->>>>>>> 3d21bbe326d60270e06075f8a6a208a391dbcfe0
+    counts = my_string.count('c')
+    new_string = list(my_string)
+    while counts:
+        new_string.remove('c')
+        counts -= 1
+    counts = my_string.count('C')
+    while counts:
+        new_string.remove('C')
+        counts -= 1
+    new_string = ''.join(new_string)
+    return new_string
