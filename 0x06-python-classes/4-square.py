@@ -6,16 +6,17 @@ class Square:
     def __init__(self, size=0):
         self.__size = size
 
-    """setting the property of size"""
+    """getting the property of size"""
     @property
     def size(self):
         return self.__size
-    """Setting the values of the attr size"""
+    
     @size.setter
+    """Setting the value of attr size"""
     def size(self, value):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif if value < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
     def area(self):
