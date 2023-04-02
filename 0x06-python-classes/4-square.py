@@ -10,15 +10,14 @@ class Square:
     @property
     def size(self):
         return self.__size
-
+    """Setting the values of the attr size"""
     @size.setter
     def size(self, value):
-        if value < 0:
-            raise ValueError("size must be >= 0")
-        elif not isinstance(size, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
+        elif if value < 0:
+            raise ValueError("size must be >= 0")
         self.__size = size
-
     def area(self):
         """public method to calculate the area"""
         return self.__size ** 2
