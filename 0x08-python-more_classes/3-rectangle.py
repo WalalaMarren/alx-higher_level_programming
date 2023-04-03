@@ -54,7 +54,7 @@ class Rectangle:
     def print_pattern(self):
         """This is a formula used to print the rectangle"""
         if (self.__width == 0 or self.__height == 0):
-            print()
+            return str()
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
