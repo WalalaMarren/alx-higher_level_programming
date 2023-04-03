@@ -15,6 +15,10 @@ class Rectangle:
 
     @property
     def width(self):
+        """
+        This is a method that retrives the width value.
+        it takes no arguments besides the reference parameter.the setter is used to set the attributes
+        """
         return self.__width
     @width.setter
     def width(self, value):
@@ -25,6 +29,10 @@ class Rectangle:
         self.__width = value
     @property
     def height(self):
+        """
+        This is a method that retrives the width value.
+        it takes no arguments besides the reference parameter.the setter is used to set the attributes
+        """
         return self.__height
     @height.setter
     def height(self, value):
