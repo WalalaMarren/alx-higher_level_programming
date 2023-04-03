@@ -52,11 +52,11 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def print_pattern(self):
-        """This is a method to print the rectangle"""
+        """This is a formula used to print the rectangle"""
         if (self.__width == 0 or self.__height == 0):
             print()
         else:
-            for i in range(0, self.__height):
-                for j in range(0, self.__width):
-                    print("#", end="")
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    print('#', end='')
                 print()
