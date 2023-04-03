@@ -51,12 +51,18 @@ class Rectangle:
         else:
             return 2 * (self.__width + self.__height)
 
-    def print_pattern(self):
-        """This is a formula used to print the rectangle"""
-        if (self.__width == 0 or self.__height == 0):
-            return str()
-        else:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    print('#', end='')
-                print()
+    def __str__(self):
+        """ Method that returns the Rectangle #
+        Returns:
+            str of the rectangle
+        """
+
+        rectangle = ""
+
+        if self.width == 0 or self.height == 0:
+            return rectangle
+
+        for i in range(self.height):
+            rectangle += ("#" * self.width) + "\n"
+
+        return rectangle[:-1]
