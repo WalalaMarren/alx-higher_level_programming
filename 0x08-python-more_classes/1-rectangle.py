@@ -3,22 +3,19 @@
 
 
 class Rectangle:
-    """
-    defining the class rectangle
-    Args:
-        width : must be an integer
-        height: must be an integer
-    """
+    """defining the class rectangle"""
     def __init__(self, width=0, height=0):
+         """Initialize a new Rectangle.
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """
-        This is a method that retrives the width value.
-        it takes no arguments besides the reference parameter.the setter is used to set the attributes
-        """
+        """This is a method that retrives the width value."""
         return self.__width
     @width.setter
     def width(self, value):
@@ -29,10 +26,7 @@ class Rectangle:
         self.__width = value
     @property
     def height(self):
-        """
-        This is a method that retrives the width value.
-        it takes no arguments besides the reference parameter.the setter is used to set the attributes
-        """
+        """This is a method that retrives the width value."""
         return self.__height
     @height.setter
     def height(self, value):
@@ -40,4 +34,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
-        self.__height = height
+        self.__height = value
