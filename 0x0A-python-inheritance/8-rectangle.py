@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """Defining a new subclass Rectangle"""
 
 
@@ -12,9 +14,6 @@ class Rectangle(BaseGeometry):
             width(int): Parameter for the width, private
             height(int): Parameter for the height, private
         """
-
-        self.__width = 0
-        self.__height = 0
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__height = height
