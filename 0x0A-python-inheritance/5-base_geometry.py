@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defining a new class Geometry"""
 
 class BaseGeometry:
-    """The class defined is an empty instance"""
+    """The class defined above is an empty class BaseGeometry to be build on"""
     pass
