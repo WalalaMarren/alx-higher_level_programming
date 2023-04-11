@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
 """Defining a new subclass Rectangle"""
 
-
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 class Rectangle(BaseGeometry):
     """This is a new class Rectangle which inherits property and methods of BaseGeometry"""
 
