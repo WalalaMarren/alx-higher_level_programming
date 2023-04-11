@@ -3,7 +3,7 @@
 
 
 class Rectangle(BaseGeometry):
-    """This is a new class Rectangle which is an instance of BaseGeometry"""
+    """This is a new class Rectangle which inherits property and methods of BaseGeometry"""
 
     def __init__(self, width, height):
         """This is a contructor to initialize new rectangle
@@ -13,5 +13,5 @@ class Rectangle(BaseGeometry):
             height(int): Parameter for the height, private
         """
         self.__width = width
-        self.integer_validator("height", height)
         self.__height = height
+        super().integer_validator()
