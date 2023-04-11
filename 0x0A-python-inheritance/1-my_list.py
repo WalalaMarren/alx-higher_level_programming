@@ -13,4 +13,5 @@ class MyList(list):
         Fucntion that prints a sorted list
         return: None
         """
-        print(self.sort(reverse = True))
+        new_list = sorted(self)
+        print(new_list)
