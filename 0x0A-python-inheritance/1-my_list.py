@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""  New class """
+"""This is a subclass Mylist Instantiation"""
 
 
 class MyList(list):
-    """ Mylist class that inherist from list """
+    """ Child class Mylist that inherits from list """
 
     def print_sorted(self):
         """ Fucntion that prints a sorted list """
-        print(sorted(self))
+
+        return sorted(self)
