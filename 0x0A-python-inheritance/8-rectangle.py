@@ -6,10 +6,12 @@ class Rectangle(BaseGeometry):
     """This is a new class Rectangle which is an instance of BaseGeometry"""
 
     def __init__(self, width, height):
-        """This is a contructor method that's called every time a new obj is created
+        """This is a contructor to initialize new rectangle
+
         Args:
-            width: Parameter for the width, private
-            height: Parameter for the height, private
+            width(int): Parameter for the width, private
+            height(int): Parameter for the height, private
         """
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
