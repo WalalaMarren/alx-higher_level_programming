@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-"""Defines a base geometry class BaseGeometry."""
+"""Class definition of BaseGeometry"""
 
 
 class BaseGeometry:
-    """Represent base geometry."""
-
+    """The class above is an empty class BaseGeometry to be build on"""
     def area(self):
-        """Not yet implemented"""
+        """this is a public method with no args"""
         raise Exception("area() is not implemented")
-
     def integer_validation(kself, name, value):
         """Validate a parameter as an integer.
         Args:
