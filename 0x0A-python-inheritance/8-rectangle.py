@@ -12,6 +12,7 @@ class Rectangle(BaseGeometry):
             width(int): Parameter for the width, private
             height(int): Parameter for the height, private
         """
+
         self.__width = width
         self.__height = height
         super().integer_validator()
