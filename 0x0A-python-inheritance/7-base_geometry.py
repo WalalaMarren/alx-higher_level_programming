@@ -7,16 +7,13 @@ class BaseGeometry:
     def area(self):
         """this is a public method with no args"""
         raise Exception("area() is not implemented")
-    def integer_validation(kself, name, value):
-        """Validate a parameter as an integer.
+    def integer_validator(self, name, value):
+        """This is class method that validates the value input
         Args:
-            name (str): The name of the parameter.
-            value (int): The parameter to validate.
-        Raises:
-            TypeError: If value is not an integer.
-            ValueError: If value is <= 0.
+            name(str): The string to be input
+            value(int): The value of the name
         """
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
+        elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
