@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""Defining a new subclass Rectangle"""
+"""Defines a Rectangle subclass Square."""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """class Square which inherits property and methods of Rectangle"""
+    """Represent a square."""
 
     def __init__(self, size):
-        """This is a contructor to initialize new rectangle
-        Args:
-            size(int): Parameter for the width and height private
-        """
-        self.integer_validator("size", size)
-        self.__size = size
+        """Initialize a new square.
+    Args:
+        size (int): The size of the new square.
+    """
+    self.integer_validator("size", size)
+    super().__init__(size, size)
+    self.__size = size
