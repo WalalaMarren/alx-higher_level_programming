@@ -3,7 +3,7 @@
 
 
 def write_file(filename="", text=""):
-    """This is the function to write the string"""
-
+    """file function to write text to filename"""
     with open(filename, "w", encoding="utf-8") as f:
-        f.write(text)
+        string = str(text)
+        f.write(string)
