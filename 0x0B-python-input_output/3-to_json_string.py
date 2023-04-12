@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """Introducing the JSON file serialization"""
+import json
 
 
 def to_json_string(my_obj):
