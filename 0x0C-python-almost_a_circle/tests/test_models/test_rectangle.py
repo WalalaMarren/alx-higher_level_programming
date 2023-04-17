@@ -250,7 +250,7 @@ class TestRectangle_height(unittest.TestCase):
             Rectangle(1, float('nan'))
 
     def test_negative_height(self):
-        with self.assertRaisesRegex(ValueError, "height must be > 0)":
+        with self.assertRaisesRegex(ValueError, "height must be > 0"):
             Rectangle(1, -1)
 
     def test_zero_height(self):
