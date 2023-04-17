@@ -159,7 +159,7 @@ class TestBase_save_to_file(unittest.TestCase):
             os.remove("Rectangle.json")
         except IOError:
            pass
-       try:
+        try:
            os.remove("Square.json")
         except IOError:
             pass
@@ -541,6 +541,5 @@ class TestBase_load_from_file_csv(unittest.TestCase):
         def test_load_from_file_csv_more_than_one_arg(self):
             with self.assertRaises(TypeError):
                 Base.load_from_file_csv([], 1)
-
- if __name__ == "__main__":
-     unittest.main()
+    if __name__ == "__main__":
+        unittest.main()
