@@ -1,6 +1,7 @@
 #!/usr/bin/node
-const logMe = require('./9-logme').logMe;
+let narg = 0;
 
-logMe("Hello");
-logMe("Holberton");
-logMe("School");
+exports.logMe = function (item) {
+  console.log(narg + ': ' + item);
+  narg++;
+};
